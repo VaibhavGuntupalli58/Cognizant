@@ -1,0 +1,27 @@
+.eventCard {
+
+    border: 3px solid blue;
+
+    padding: 20px;
+
+    margin: 30px;
+}
+
+.inputBox {
+
+    outline: 3px solid red;
+}
+
+/* Visibility Hidden */
+
+.hiddenText {
+
+    visibility: hidden;
+}
+
+/* Display None */
+
+.noneText {
+
+    display: none;
+}

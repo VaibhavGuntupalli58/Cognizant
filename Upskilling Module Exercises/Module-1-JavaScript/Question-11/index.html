@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+
+    <style>
+
+        .error {
+
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form id="registerForm">
+
+        Name:
+        <input type="text" name="username">
+
+        <br><br>
+
+        Email:
+        <input type="email" name="email">
+
+        <br><br>
+
+        Event:
+        <select name="event">
+
+            <option>Music</option>
+
+            <option>Sports</option>
+
+        </select>
+
+        <br><br>
+
+        <button type="submit">
+            Submit
+        </button>
+
+        <p class="error" id="error"></p>
+
+    </form>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Feedback</title>
+
+    <script>
+
+        function validatePhone() {
+            let phone = document.getElementById("phone").value;
+
+            if(phone.length != 10) {
+                alert("Phone number must contain 10 digits");
+            }
+        }
+
+        function showFee() {
+            let event = document.getElementById("event").value;
+            document.getElementById("fee").innerHTML =
+            "Selected Event Fee: " + event;
+        }
+
+        function submitForm() {
+            alert("Feedback Submitted");
+        }
+
+        function enlargeImage() {
+            document.getElementById("img").style.width = "400px";
+        }
+
+        function countChars() {
+            let text =
+            document.getElementById("feedback").value;
+
+            document.getElementById("count").innerHTML =
+            "Characters: " + text.length;
+        }
+
+    </script>
+</head>
+<body>
+
+    <h2>Event Feedback</h2>
+
+    Phone Number:
+    <input type="text"
+           id="phone"
+           onblur="validatePhone()">
+
+    <br><br>
+
+    Select Event:
+    <select id="event" onchange="showFee()">
+        <option value="100">Music - ₹100</option>
+        <option value="200">Sports - ₹200</option>
+    </select>
+
+    <p id="fee"></p>
+
+    <button onclick="submitForm()">
+        Submit
+    </button>
+
+    <br><br>
+
+    <img src="event.jpg"
+         id="img"
+         width="200"
+         ondblclick="enlargeImage()">
+
+    <br><br>
+
+    Feedback:
+    <textarea id="feedback"
+              onkeyup="countChars()"></textarea>
+
+    <p id="count">Characters: 0</p>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+
+    font-size: 2vw;
+}
+
+.navbar {
+
+    display: flex;
+
+    gap: 20px;
+}
+
+.eventImage {
+
+    width: 40vw;
+
+    height: auto;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+
+        flex-direction: column;
+    }
+
+    .eventImage {
+
+        width: 80vw;
+    }
+
+    body {
+
+        font-size: 4vw;
+    }
+}

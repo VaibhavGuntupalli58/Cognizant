@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>jQuery Methods</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js">
+    </script>
+
+    <style>
+
+        .box {
+
+            width: 100px;
+
+            height: 100px;
+
+            background-color: blue;
+
+            margin: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="box"></div>
+
+    <div class="box"></div>
+
+    <div class="box"></div>
+
+    <button id="hide">
+        Hide
+    </button>
+
+    <button id="show">
+        Show
+    </button>
+
+    <button id="fadeOut">
+        Fade Out
+    </button>
+
+    <button id="fadeIn">
+        Fade In
+    </button>
+
+    <button id="toggle">
+        Toggle
+    </button>
+
+    <button id="chain">
+        Chain Effect
+    </button>
+
+    <script>
+
+        $("#hide").click(function() {
+
+            $(".box").hide();
+
+        });
+
+        $("#show").click(function() {
+
+            $(".box").show();
+
+        });
+
+        $("#fadeOut").click(function() {
+
+            $(".box").fadeOut();
+
+        });
+
+        $("#fadeIn").click(function() {
+
+            $(".box").fadeIn();
+
+        });
+
+        $("#toggle").click(function() {
+
+            $(".box").toggle();
+
+        });
+
+        $("#chain").click(function() {
+
+            $(".box")
+            .slideUp()
+            .delay(1000)
+            .slideDown();
+
+        });
+
+    </script>
+
+</body>
+</html>
