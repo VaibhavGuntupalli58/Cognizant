@@ -1,0 +1,2 @@
+Hello from GitNewBranch
+This file belongs to the branch.
